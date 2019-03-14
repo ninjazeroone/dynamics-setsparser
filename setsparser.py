@@ -29,7 +29,7 @@ def getRequest(url, par = None):
     try:
         result = r.json()
     except:
-        print('\nError. Request can\'t get JSON, maybe you need to authenticate? Anyway, here\'s server\'s request:\n')
+        print('\nError. Request can\'t get JSON, maybe you need to authenticate? Anyway, here\'s server\'s response:\n')
         print(r.text)
         quit()
     return result
